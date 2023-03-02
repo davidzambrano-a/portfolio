@@ -1,0 +1,192 @@
+.home__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    align-items: center;
+    margin: 10rem auto;
+}
+.home__content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Space Grotesk", sans-serif;
+    // max-width: 600px;
+}
+.home__content--info {
+    margin: 0 10px;
+}
+.teach {
+    font-size: 40px;
+    color: #676767;
+    color: #25ab75;
+}
+.home__title {
+    color: #fff;
+    font-size: 45px;
+}
+.home__description {
+    text-align: initial;
+    margin-bottom: 1rem;
+    color: #676767;
+}
+.hr {
+    max-width: 30%;
+    height: 5px;
+    background: #25ab75;
+    border: none;
+    border-radius: 5px;
+    margin: 0 0 .5rem 0;
+}
+.home__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #373737;
+    padding-top: 1rem;
+    color: #676767;
+    margin: 0 10px;
+}
+.home__info-number {
+    color: #fff;
+    font-size: 40px;
+}
+.home__info-title {
+    font-size: 15px;
+    font-family: "Space Grotesk", sans-serif;
+}
+img {
+    width: 330px;
+    height: 450px;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 9px 10px 0px rgba(0, 0, 0, .6);
+}
+// *** Typing Effect ***
+// animation: blink 1s infinite;
+.typingEffect {
+    display: flex;
+    align-items: center;
+}
+.text {
+    font-size: 50px;
+    color: #676767;
+}
+.textTyping {
+    margin-left: 1.3rem;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.textTyping li {
+    position: relative;
+    list-style: none;
+    color: #25ab75;
+    font-size: 50px;
+    font-weight: 500;
+    top: 0;
+    animation: slide 16s steps(4) infinite; // 4s. Delay before printing another word
+}
+@keyframes slide  {
+    100% { top: -360px; }
+}
+.textTyping li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 80px;
+}
+// The Cursor. Is a background with a color similar to the main Background
+.textTyping li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 15px;
+    height: 90%;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-left: 3px solid #ccc; // Background color ---> Cursor
+    animation: typing 4s steps(10) infinite; // 4s. Delay before staring another word
+}
+
+@keyframes blink {
+    0% { background: #25ab75; }
+    50% { background: transparent; }
+    100% { background: #25ab75; }
+}
+@keyframes typing {
+    40%, 60% { left: calc(100% + 30px); }
+    100% { left: 0; }
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .home__wrapper {
+        max-width: 900px;
+    }
+    .home__title {
+        font-size: 40px;
+    }
+    .hr {
+        max-width: 30%;
+        height: 5px;
+        background: #25ab75;
+        border: none;
+        margin: .5rem 0 1rem 0;
+    }
+    .home__info-number {
+        font-size: 30px;
+    }
+    .home__info-title {
+        font-size: 15px;
+    }
+    img {
+        width: 270px;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .home__wrapper {
+        max-width: 800px;
+        justify-content: center;
+        // margin: 5rem auto;
+    }
+    img {
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 520px) {
+    .home__wrapper {
+        margin: 7rem auto;
+    }
+    .home__title {
+        font-size: 30px;
+    }
+    .hr {
+        max-width: 35%;
+    }
+    .text {
+        font-size: 40px;
+    }
+    .textTyping li {
+        font-size: 40px;
+    }
+    // Text typing
+    .textTyping li span::after {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        animation: typing 4s steps(10) infinite;
+    }
+}
+@media screen and (max-device-width: 920px) and (orientation: landscape) {
+    .home__title {
+        font-size: 35px;
+    }
+    .hr {
+        max-width: 37%;
+    }
+    img {
+        width: 250px;
+        height: 360px;
+    }
+}

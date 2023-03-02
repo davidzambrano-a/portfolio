@@ -1,0 +1,47 @@
+#goUpButton { /*#. Is to know this an id. Setting in the HTML*/
+    position: fixed; /*To be able to Align the Button wherever you want*/
+    display: flex;  /*To be able to Vertical alignment of the Button Sign*/
+    align-items: center; /*Vertical alignment of the Button Sign*/
+    justify-content: center; /* Horizontal alignment of the Button Sign*/
+    background: #25ab75; // Lightly
+    bottom: 16px;
+    right: 62px; /*Original: 32px*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 1;  /*Disable to configure the Steps. Till the end of the Process, we able the OPACITY */
+    cursor: pointer;
+    border: 4px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .4s ease;
+    z-index: 1;
+}
+#goUpButton:hover {
+    background: #208c61; // Dark
+    transition: all .4s ease;
+}
+@media screen and (max-width: 520px) {
+    #goUpButton {
+        right: 12px; /*Original: 32px*/
+        width: 40px;
+        height: 40px;
+        cursor: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-device-width: 920px) and (orientation: landscape) {
+    #goUpButton {
+        right: 50px; /*Original: 32px*/
+        width: 40px;
+        height: 40px;
+        cursor: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

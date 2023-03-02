@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+li a {
+    text-decoration: none;
+}
+body {
+    background: #1a1a1a;
+    position: relative; // For Footer
+    min-height: 100vh;  // For Footer
+    padding-bottom: 5rem;   // For Footer
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #25ab75;
+    border-radius: 5px;
+    &:hover {
+        background: #208c61;
+        transition: all 500ms ease;
+    }
+}
+// For Footer
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

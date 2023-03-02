@@ -1,0 +1,120 @@
+.about__section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section__header {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 5rem 0;
+    text-align: center;
+}
+.about__content {
+    max-width: 500px;
+    margin: 0 10px 0 10px;
+}
+.section__title {
+    font-weight: 700;
+    font-size: 24px;
+}
+.section__subtitle {
+    color: #676767;
+}
+button .read {
+    color: #fff;
+    font-weight: 500;
+}
+.hr {
+    width: 7%;
+    height: 5px;
+    background: #25ab75;
+    border: #25ab75;
+    border-radius: 5px;
+    margin: .3rem auto 0 auto;
+}
+.about__wrapper { // *** Responsive ***
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+.about__title {
+    color: #fff;
+    font-size: 35px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.about__description {
+    color: #676767;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 2rem 0;
+    text-align: justify;
+}
+.btn--primary {
+    width: 165px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #25ab75;
+    border: #25ab75;
+    cursor: pointer;
+    &:hover {
+        background: #208c61;
+        transition: all 500ms ease;
+    }
+}
+// ---------
+.skills__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.skills__title {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.skills__content {
+    background: #242424;
+    padding: 3rem;
+    margin: 5px;
+}
+.skills__subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.skills__list {
+    margin-top: 2rem;
+}
+.skills__item {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Space Grotesk", sans-serif;
+    margin: .5rem;
+}
+.ri-arrow-right-s-fill {
+    color: #208c61;
+}
+@media screen and (max-width: 1080px) {
+    .section__header {
+        margin: 3rem 0;
+    }
+    .about__content {
+        margin-bottom: 3rem;
+    }
+    .skills__title {
+        margin: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .about__wrapper { // *** Responsive ***
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 520px) {
+    .skills__content {
+        padding: 1rem;
+        margin: 2px;
+    }
+}

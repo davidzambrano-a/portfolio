@@ -1,0 +1,46 @@
+.contact__section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 5rem 1.5rem;
+    border-top: 1px solid #676767;
+    padding-top: 2rem;
+}
+.contact__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 530px;
+}
+.contact__description {
+    color: #676767;
+    max-width: 500px;
+    margin: 2rem 0;
+}
+.btn__contact {
+    width: 165px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #25ab75;
+    border: #25ab75;
+    cursor: pointer;
+    &:hover {
+        background: #208c61;
+        transition: all 500ms ease;
+    }
+}
+.btn__contact a {
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 650px) {
+    .contact__wrapper {
+        flex-wrap: wrap;
+    }
+}

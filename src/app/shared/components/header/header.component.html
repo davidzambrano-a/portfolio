@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="header__container">
+        <label class="logo" routerLink="/home" (click)="closeMenu()" (click)="closeBurgerMenu()" (click)="closeBackground()">
+            David Zambrano
+        </label>
+        <div class="background__menu" [ngClass]="{ 'background__menu--active': backgroundActive }"
+        (click)="closeMenu()" (click)="closeBurgerMenu()" (click)="closeBackground()"></div>
+        <nav class="nav" [ngClass]="{ 'nav--active': menuActive }">
+            <ul (click)="closeMenu()" (click)="closeBurgerMenu()" (click)="closeBackground()">
+                <li>
+                    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
+                </li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/qualification" routerLinkActive="active">Qualification</a></li>
+                <li><a routerLink="/jobs" routerLinkActive="active">Services</a></li>
+                <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="btn__burger" [ngClass]="{ 'btn__burger--active': burgerActive }">
+            <div class="hamburger" (click)="openMenu()" (click)="openBurgerMenu()" (click)="openBackground()">
+                <div>
+                    <span class="line__1"></span>
+                    <span class="line__2"></span>
+                    <span class="line__3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
